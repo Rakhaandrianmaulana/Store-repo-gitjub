@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanaVyn Official Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Kustom untuk Efek Neon Glow */
+        body {
+            background-color: #100000; /* Latar belakang hitam kemerahan */
+            font-family: 'Poppins', sans-serif;
+            color: #f0f0f0;
+        }
+
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        /* Efek Glow Merah */
+        .text-glow-red {
+            color: #fff;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #ff0000,
+                0 0 82px #ff0000,
+                0 0 92px #ff0000,
+                0 0 102px #ff0000,
+                0 0 151px #ff0000;
+        }
+
+        /* Efek Glow Putih */
+        .text-glow-white {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #e6e6e6,
+                0 0 20px #cccccc;
+        }
+        
+        /* Efek Glow pada Border dan Tombol */
+        .border-glow-red {
+            border: 2px solid #ff4d4d;
+            box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, inset 0 0 5px #ff0000;
+        }
+
+        .btn-glow {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 5px #ff1a1a, 0 0 15px #ff1a1a, inset 0 0 5px #ff1a1a;
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 10px #ff4d4d, 0 0 30px #ff4d4d, inset 0 0 10px #ff4d4d;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <audio src="https://files.catbox.moe/vmkf0p.mp3" autoplay loop hidden>
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-orbitron font-bold text-glow-red mb-6">
+                LanaVyn Official
+            </h1>
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg inline-block">
+                <p class="text-lg text-glow-white mb-3">Owner LanaVyn Official</p>
+                <a href="https://wa.me/6285971105030" target="_blank" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg btn-glow hover:bg-red-700">
+                    Hubungi Owner
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="produk" class="mb-12">
+                <h2 class="text-3xl font-orbitron font-bold text-center text-glow-white mb-8">Produk Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-gray-800 bg-opacity-70 rounded-xl p-6 border-glow-red flex flex-col">
+                        <h3 class="text-2xl font-bold text-red-400 mb-2">🧨 Suntik Sosmed</h3>
+                        <p class="text-lg text-gray-300 mb-4">Rp145 / 1 Follower</p>
+                        <div class="mt-auto">
+                            <input type="number" id="jumlah-1" class="w-full bg-gray-900 border border-gray-600 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Masukkan jumlah follower...">
+                            <button data-id="1" class="tambah-btn w-full mt-3 bg-red-700 text-white font-semibold py-2 px-4 rounded-lg btn-glow hover:bg-red-800">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 bg-opacity-70 rounded-xl p-6 border-glow-red flex flex-col">
+                        <h3 class="text-2xl font-bold text-red-400 mb-2">📜 Script Assain v2</h3>
+                        <p class="text-lg text-gray-300 mb-4">Rp25.000</p>
+                        <div class="mt-auto">
+                            <input type="number" id="jumlah-2" class="w-full bg-gray-900 border border-gray-600 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Jumlah script (biasanya 1)...">
+                            <button data-id="2" class="tambah-btn w-full mt-3 bg-red-700 text-white font-semibold py-2 px-4 rounded-lg btn-glow hover:bg-red-800">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 bg-opacity-70 rounded-xl p-6 border-glow-red flex flex-col">
+                        <h3 class="text-2xl font-bold text-red-400 mb-2">💼 Reseller Script Assain</h3>
+                        <p class="text-lg text-gray-300 mb-4">Rp35.000</p>
+                        <div class="mt-auto">
+                            <input type="number" id="jumlah-3" class="w-full bg-gray-900 border border-gray-600 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Jumlah lisensi (biasanya 1)...">
+                            <button data-id="3" class="tambah-btn w-full mt-3 bg-red-700 text-white font-semibold py-2 px-4 rounded-lg btn-glow hover:bg-red-800">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <hr class="border-red-500 border-glow-red my-10">
+
+            <section id="checkout" class="bg-gray-800 bg-opacity-70 rounded-xl p-8 border-glow-red">
+                <h2 class="text-3xl font-orbitron font-bold text-glow-white mb-6">Keranjang Anda</h2>
+                <div id="keranjang-items" class="space-y-3 mb-6 min-h-[50px]">
+                    <p class="text-gray-400">Keranjang masih kosong.</p>
+                </div>
+                <div class="border-t-2 border-red-500 pt-4 mt-6">
+                    <h3 class="text-2xl font-bold text-white">Total Harga: 
+                        <span id="total-harga" class="text-red-400 text-glow-red">Rp0</span>
+                    </h3>
+                </div>
+                <button id="checkout-btn" class="w-full mt-6 bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-green-700 transition-all duration-300 flex items-center justify-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    <span>Checkout via WhatsApp</span>
+                </button>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12">
+            <p class="text-gray-500">&copy; 2025 Officially Registered | LanaVyn</p>
+        </footer>
+
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
